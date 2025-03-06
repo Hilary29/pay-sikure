@@ -4,7 +4,6 @@
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 import { useState } from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
-import { FaQuoteLeft } from 'react-icons/fa6';
 
 const testimonials = [
   {
