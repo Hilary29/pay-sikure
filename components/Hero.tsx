@@ -26,7 +26,7 @@ export default function Hero() {
                 Transform Your Financial  with PaySikure
               </p>
               <p className="text-lg md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
-                Une coalition entre 
+                Une coalition entre Paysika et Sekure
               </p>
             </div>
 

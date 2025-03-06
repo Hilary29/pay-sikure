@@ -21,45 +21,45 @@ const config: Config = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-				'50': '#ebf9ee',
-				'100': '#c0eccc',
-				'200': '#a2e5b3',
-				'300': '#77d990',
-				'400': '#5dd27a',
-				'500': '#43c759',
-				'600': '#2fb551',
-				'700': '#258d3f',
-				'800': '#1d6d31',
-				'900': '#165425',
+  				'50': '#ebf9ee',
+  				'100': '#c0eccc',
+  				'200': '#a2e5b3',
+  				'300': '#77d990',
+  				'400': '#5dd27a',
+  				'500': '#43c759',
+  				'600': '#2fb551',
+  				'700': '#258d3f',
+  				'800': '#1d6d31',
+  				'900': '#165425',
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-				'50': '#e6f6fb',
-				'100': '#b2e3f4',
-				'200': '#8cdefe',
-				'300': '#58c3e7',
-				'400': '#38b7e2',
-				'500': '#06a5db',
-				'600': '#0596c7',
-				'700': '#04759b',
-				'800': '#035b78',
-				'900': '#03455c',
+  				'50': '#e6f6fb',
+  				'100': '#b2e3f4',
+  				'200': '#8cdefe',
+  				'300': '#58c3e7',
+  				'400': '#38b7e2',
+  				'500': '#06a5db',
+  				'600': '#0596c7',
+  				'700': '#04759b',
+  				'800': '#035b78',
+  				'900': '#03455c',
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
-			  error: {
-				'50': '#FEF2F2',
-				'100': '#FEE2E2',
-				'200': '#FECACA',
-				'300': '#FCA5A5',
-				'400': '#F87171',
-				'500': '#F43F5E',
-				'600': '#E11D48',
-				'700': '#be125f',
-				'800': '#9F1239',
-				'900': '#881337'
-			},
+  			error: {
+  				'50': '#FEF2F2',
+  				'100': '#FEE2E2',
+  				'200': '#FECACA',
+  				'300': '#FCA5A5',
+  				'400': '#F87171',
+  				'500': '#F43F5E',
+  				'600': '#E11D48',
+  				'700': '#be125f',
+  				'800': '#9F1239',
+  				'900': '#881337'
+  			},
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
@@ -87,6 +87,28 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },
