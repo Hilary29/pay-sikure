@@ -1,8 +1,10 @@
 "use client"
 
 
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 import { useState } from 'react';
+import { FaQuoteRight } from 'react-icons/fa';
+import { FaQuoteLeft } from 'react-icons/fa6';
 
 const testimonials = [
   {
@@ -71,13 +73,13 @@ export default function Testimonials() {
           TEMOIGNAGES
           </p>
           <p className="font-regular font-inter text-xl text-gray-700 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
-          Real stories from people using PaySikure to transform the way they farm, buy, and innovate.
+          Histoires réelles de personnes utilisant PaySikure pour transformer leur façon de payer, d'acheter et de transférer de l'argent.
           </p>
         </div> 
         {/* Section des témoignages */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.slice(currentIndex, currentIndex + testimonialsPerPage).map((testimonial, index) => (
-            <div key={index} className="bg-gray-100 rounded-lg p-8 flex flex-col justify-between">
+            <div key={index} className="bg-primary-50 rounded-lg p-8 flex flex-col justify-between">
               <div>
                 <p className="text-gray-600 mb-6">{testimonial.quote}</p>
               </div>
@@ -85,6 +87,9 @@ export default function Testimonials() {
                 <div>
                   <h3 className="font-medium text-gray-900">{testimonial.name}</h3>
                 </div>
+              </div>
+              <div className='flex flex-row-reverse '>
+              <FaQuoteRight className='w-6 h-6'/>
               </div>
             </div>
           ))}
@@ -95,7 +100,7 @@ export default function Testimonials() {
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
-            className={`p-2 rounded-full bg-primary-50 text-primary-600 hover:bg-primary-100 transition-colors duration-200 ${
+            className={`p-2 rounded-full bg-primary-50 text-primary-900 hover:bg-primary-100 transition-colors duration-200 ${
               currentIndex === 0 && 'opacity-50 cursor-not-allowed'
             }`}
           >
@@ -104,7 +109,7 @@ export default function Testimonials() {
           <button
             onClick={handleNext}
             disabled={currentIndex + testimonialsPerPage >= testimonials.length}
-            className={`p-2 rounded-full bg-primary-50 text-primary-600 hover:bg-primary-100 transition-colors duration-200 ${
+            className={`p-2 rounded-full bg-primary-50 text-primary-900 hover:bg-primary-100 transition-colors duration-200 ${
               currentIndex + testimonialsPerPage >= testimonials.length && 'opacity-50 cursor-not-allowed'
             }`}
           >

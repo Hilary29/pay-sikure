@@ -70,7 +70,7 @@ const Faq = () => {
             >
               <AccordionTrigger
                 onClick={() => toggleAccordion(`item-${index + 1}`)}
-                className="flex justify-between items-center text-left font-medium text-base sm:text-lg md:text-xl font-satoshi py-4 px-2 "
+                className="flex justify-between items-center text-left font-medium text-base sm:text-lg   py-4 px-2 "
               >
                 {item.question}
                 <ToggleIcon isOpen={openItem === `item-${index + 1}`} />

@@ -2,14 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 interface StepCardProps {
-  step: number;
   title: string;
   description: string;
   imageSrc: string;
 }
 
 const StepCard: React.FC<StepCardProps> = ({
-  step,
   title,
   description,
   imageSrc,
@@ -34,7 +32,6 @@ const StepCard: React.FC<StepCardProps> = ({
 );
 
 const StepCard2: React.FC<StepCardProps> = ({
-  step,
   title,
   description,
   imageSrc,
@@ -110,7 +107,6 @@ const Services: React.FC = () => {
           {steps1.map((step, index) => (
             <StepCard
               key={index}
-              step={index + 1}
               title={step.title}
               description={step.description}
               imageSrc={step.imageSrc}
@@ -119,7 +115,6 @@ const Services: React.FC = () => {
           {steps2.map((step, index) => (
             <StepCard2
               key={index}
-              step={index + 1}
               title={step.title}
               description={step.description}
               imageSrc={step.imageSrc}
@@ -128,7 +123,6 @@ const Services: React.FC = () => {
           {steps3.map((step, index) => (
             <StepCard
               key={index}
-              step={index + 1}
               title={step.title}
               description={step.description}
               imageSrc={step.imageSrc}
@@ -137,7 +131,6 @@ const Services: React.FC = () => {
           {steps4.map((step, index) => (
             <StepCard2
               key={index}
-              step={index + 1}
               title={step.title}
               description={step.description}
               imageSrc={step.imageSrc}

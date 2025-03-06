@@ -22,7 +22,7 @@ const Cta = () => {
           hover:bg-primary-700 "
         >
           <p className=" text-paragraph-lg">
-            Telecharger l'application
+            Telecharger l&apos;application
           </p>
         </Link>
       </div>

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { Apple, PlayIcon } from "lucide-react"
-
+import { Apple, PlayIcon } from "lucide-react";
+import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function Hero() {
-
   return (
     <div className="relative w-full">
       {/* Hero Background */}
@@ -19,37 +19,59 @@ export default function Hero() {
 
         {/* Hero Content */}
         <div className="relative container mx-auto px-20 h-full flex items-center">
-          <div className="flex flex-col gap-10 max-w-[599px] pt-20 md:pt-0">
+          <div className="flex flex-col gap-4 max-w-[599px] pt-20 md:pt-0">
             {/* Landing Text */}
-            <div className="flex flex-col gap-8">
+            <div>
+            <div className="flex flex-col gap-10 pb-8">
               <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight font-poppins">
-                Transform Your Financial  with PaySikure
+                Transform Your Financial with PaySikure
               </p>
               <p className="text-lg md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
                 Une coalition entre Paysika et Sekure
               </p>
             </div>
+            </div>
 
-            {/* Buttons */}
+            <div className="">
+              <Button className="flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white py-6 px-6 rounded-md">
+                <span className="font-poppins font-medium text-xl">
+                  Telechargez maintenant
+                </span>
+              </Button>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
-                
-              <button className="flex items-center justify-center gap-2.5 bg-primary-600 hover:bg-primary-700 text-white py-4 px-6 rounded-xl">
-                <span className="w-6 h-6">
-                    <PlayIcon />
+              <div className="flex items-center justify-center gap-2.5  text-white rounded-xl">
+                <span className="w-8 h-8">
+                  <Image
+                    src="/images/apple.png"
+                    alt={"applestore"}
+                    width={64}
+                    height={64}
+                  />
                 </span>
-                <span className="font-poppins font-medium text-xl">PlayStore</span>
-              </button>
-              <button className="flex items-center justify-center gap-2.5 bg-primary-600 hover:bg-primary-700 text-white py-4 px-6 rounded-xl">
-                <span className="w-6 h-6">
-                    <Apple/>
+                <span className="font-poppins font-medium text-xl">
+                  AppleStore
                 </span>
-                <span className="font-poppins font-medium text-xl">AppleStore</span>
-              </button>
+              </div>
+              <div className="w-1 h-8  border-2"></div>
+              <div className="flex items-center justify-center gap-2.5   text-white rounded-xl">
+                <span className="w-8 h-8">
+                  <Image
+                    src="/images/playstore.png"
+                    alt={"playstore"}
+                    width={64}
+                    height={64}
+                  />
+                </span>
+                <span className="font-poppins font-medium text-xl">
+                  PlayStore
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-
