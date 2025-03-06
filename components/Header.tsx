@@ -13,13 +13,13 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full border-b border-[#DEDEDE] bg-white pr-4">
+    <header className="w-full bg-white px-4">
       <div className="mx-auto flex  flex-row items-center justify-between">
         {/* Logo */}
         <div className="flex items-center ">
           <Link href="/">
             <div className="relative ">
-              <Image src="/images/Paysikure.png" alt="Logo" width={200} height={100} className="object-contain" priority />
+              <Image src="/images/Paysikure2.png" alt="Logo" width={200} height={100} className="object-contain" priority />
             </div>
           </Link>
         </div>
