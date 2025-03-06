@@ -1,7 +1,7 @@
 "use client"
 
 
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useState } from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
 
@@ -72,7 +72,7 @@ export default function Testimonials() {
           TEMOIGNAGES
           </p>
           <p className="font-regular font-inter text-xl text-gray-700 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
-          Histoires réelles de personnes utilisant PaySikure pour transformer leur façon de payer, d'acheter et de transférer de l'argent.
+          Histoires réelles de personnes utilisant PaySikure pour transformer leur façon de payer, d&apos;acheter et de transférer de l&apos;argent.
           </p>
         </div> 
         {/* Section des témoignages */}
