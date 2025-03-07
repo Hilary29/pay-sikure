@@ -12,8 +12,8 @@ const StepCard: React.FC<StepCardProps> = ({
   description,
   imageSrc,
 }) => (
-  <div className="flex flex-row   gap-4 w-full bg-opacity-5 justify-start ">
-    <div className="relative w-2/5 h-[402px]  overflow-hidden">
+  <div className="flex flex-row   gap-4 w-full bg-opacity-5 justify-start transition-transform duration-300 ease-in-out hover:scale-110">
+    <div className="relative w-2/5 h-[302px]  overflow-hidden">
       <Image
         src={imageSrc}
         alt={title}
@@ -36,14 +36,14 @@ const StepCard2: React.FC<StepCardProps> = ({
   description,
   imageSrc,
 }) => (
-  <div className="flex flex-row  gap-4 w-full  bg-primary-50 bg-opacity-5 justify-end">
+  <div className="flex flex-row  gap-4 w-full  bg-primary-50 bg-opacity-5 justify-end transition-transform duration-300 ease-in-out hover:scale-110">
     <div className="flex flex-col items-start gap-1 w-2/5 pt-16">
       <h3 className="text-[#1E1E1E] font-semibold font-inter text-xl">
         {title}
       </h3>
       <p className=" text-lg">{description}</p>
     </div>
-    <div className="w-2/5 h-[402px] bg-primary-50 overflow-hidden">
+    <div className="w-2/5 h-[302px]  overflow-hidden">
       <Image
         src={imageSrc}
         alt={title}
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
       title: "Transferts d'argent",
       description:
         "Faites des transferts lents mais sûres avec un délai de 1 heure.",
-      imageSrc: "/images/howitwork-img3.jpg",
+      imageSrc: "/images/transfert.png",
     }
   ];
 
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
     {
       title: "Service client",
       description: "Service client disponible 8h/24 et 5j/7.",
-      imageSrc: "/images/visa-paysikure.jpg",
+      imageSrc: "/images/service-client.jpeg",
     }
   ];
 
@@ -86,7 +86,7 @@ const Services: React.FC = () => {
       title: "Frais de transaction",
       description:
         "Frais de transaction transparents.",
-      imageSrc: "/images/howitwork-img3.jpg",
+      imageSrc: "/images/frais.jpeg",
     }
   ];
 
@@ -103,7 +103,7 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1  gap-12 w-full  ">
+        <div className="grid grid-cols-1  gap-0 w-full  ">
           {steps1.map((step, index) => (
             <StepCard
               key={index}

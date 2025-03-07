@@ -3,8 +3,8 @@ import React from "react";
 
 const Cta = () => {
   return (
-    <section className="flex justify-center items-center py-[78px] my-16 px-4 bg-secondary-50 rounded-lg mx-auto mt-24 shadow-xl max-w-screen-lg">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 w-full px-6 md:px-10">
+    <section className="flex justify-center items-center bg-primary-50">
+      <div className="flex flex-col lg:flex-row items-center justify-between bg-white gap-8 w-full px-6 md:px-10 py-[78px] my-32  rounded-lg mx-auto shadow-xl max-w-screen-lg">
         <div className="flex flex-col items-start gap-4 max-w-lg text-center md:text-left">
           <h2 className="text-white-50 font-satoshi font-bold text-2xl">
             Pret a transformer votre compte bancaire?

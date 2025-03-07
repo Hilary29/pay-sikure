@@ -23,10 +23,10 @@ export default function Hero() {
             <div>
             <div className="flex flex-col gap-10 pb-8">
               <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight font-poppins">
-                Transform Your Financial with PaySikure
+              Transformez votre gestion financière avec PaySikure
               </p>
               <p className="text-lg md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
-                Une coalition entre Paysika et Sekure
+                Une coalition entre Paysika et Sekure qui vous permet d&apos;accéder à des services financiers transparents, éviter les files d&apos;attente et nous donner le contrôle de vos finances.
               </p>
             </div>
             </div>
