@@ -36,21 +36,21 @@ const Footer: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-16 xl:gap-36">
           <div>
-              <h3 className="text-[#072B1C] font-medium mb-4">Company</h3>
+              <h3 className="text-[#072B1C] font-medium mb-4">Companie</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className="text-[#4B4B4B]">
-                    Home
+                    Accueil
                   </Link>
                 </li>
                 <li>
                   <Link href="/about" className="text-[#4B4B4B]">
-                    About Us
+                    A propos
                   </Link>
                 </li>
                 <li>
                   <Link href="/pricing" className="text-[#4B4B4B]">
-                    Pricing
+                    Facturation
                   </Link>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           <div>
-              <h3 className="text-[#072B1C] font-medium mb-4">Enterprise</h3>
+              <h3 className="text-[#072B1C] font-medium mb-4">Entreprise</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className="text-[#4B4B4B]">
@@ -70,12 +70,12 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link href="/about" className="text-[#4B4B4B]">
-                   customer service
+                   Service Client
                   </Link>
                 </li>
                 <li>
                   <Link href="/pricing" className="text-[#4B4B4B]">
-                    Partners
+                    Partenaires 
                   </Link>
                 </li>
               </ul>
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
               <ul className="space-y-2">
                 <li>
                   <Link href="/contact" className="text-[#4B4B4B]">
-                    Contact Us
+                    Contactez-nous
                   </Link>
                 </li>
                 <li>
@@ -95,32 +95,32 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link href="/help-center" className="text-[#4B4B4B]">
-                    Help Center
+                    Centre d&apos;aide
                   </Link>
                 </li>
                 <li>
                   <Link href="/user-guides" className="text-[#4B4B4B]">
-                    User Guides
+                    Guide d&apos;utilisateur
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-[#072B1C] font-medium mb-4">Legal</h3>
+              <h3 className="text-[#072B1C] font-medium mb-4">Légal</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/privacy-policy" className="text-[#4B4B4B]">
-                    Privacy Policy
+                    Politique
                   </Link>
                 </li>
                 <li>
                   <Link href="/terms-of-service" className="text-[#4B4B4B]">
-                    Terms of Service
+                    Termes de service
                   </Link>
                 </li>
                 <li>
                   <Link href="/cookie-policy" className="text-[#4B4B4B]">
-                    Cookie Policy
+                    Politique des cookies
                   </Link>
                 </li>
               </ul>
@@ -130,16 +130,16 @@ const Footer: React.FC = () => {
         <div className="border-t border-[#E1E1E1] pt-10">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-[#626362] mb-4 sm:mb-0">
-              © {new Date().getFullYear()} PaySikure Inc. All Rights Reserved.
+              © {new Date().getFullYear()} PaySikure Inc. Tous droits réservés.
             </p>
 
             <div className="flex items-center space-x-6">
               <Link href="/terms" className="text-[#626362]">
-                Terms & Conditions
+                Termes et conditions
               </Link>
               <span className="text-[#626362]">•</span>
               <Link href="/privacy" className="text-[#626362]">
-                Privacy Policy
+                Politique de confidentialité
               </Link>
             </div>
           </div>

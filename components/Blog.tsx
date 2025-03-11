@@ -4,34 +4,34 @@ import { Badge } from "@/components/ui/badge";
 
 const blogPosts = [
   {
-    title: "How AI is Transforming Fraud Detection in Banking",
+    title: "",
     excerpt:
-      "Discover how artificial intelligence is revolutionizing the way financial institutions detect and prevent fraud.",
-    date: "March 8, 2025",
-    category: "Technology",
+      "Pourquoi nous prenons plus de 72 heures à vous répondre,et sans réponse automatique.",
+    date: "Janvier 8, 2025",
+    category: "Info",
     readTime: "4 min",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
-    title: "The Rise of Embedded Finance: What You Need to Know",
+    title: "",
     excerpt:
-      "Explore how non-financial companies are integrating financial services into their customer experiences.",
-    date: "March 5, 2025",
-    category: "Finance",
+      "5 Astuces pour survivre sans votre argent bloqué chez PaySikure.",
+    date: "Mars 5, 2024",
+    category: "Tips",
     readTime: "6 min",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
-    title: "Blockchain and the Future of Secure Transactions",
+    title: "",
     excerpt:
-      "Learn how blockchain technology is creating new possibilities for secure and transparent financial transactions.",
-    date: "March 1, 2025",
-    category: "Technology",
-    readTime: "7 min",
+      "Pourquoi nous ne vous faisons pas connaitre les montants des frais des transactions.",
+    date: "Fevrier 1, 2025",
+    category: "Info",
+    readTime: "3 min",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
-    title: "5 Ways Small Businesses Can Optimize Payment Processing",
+    title: "",
     excerpt:
       "Practical tips for small business owners looking to streamline their payment systems and reduce costs.",
     date: "February 25, 2025",
@@ -40,7 +40,7 @@ const blogPosts = [
     image: "/placeholder.svg?height=400&width=600",
   },
   {
-    title: "Understanding Open Banking and Its Benefits",
+    title: "",
     excerpt:
       "A comprehensive guide to open banking and how it's changing the financial landscape for consumers and businesses.",
     date: "February 20, 2025",
@@ -49,7 +49,7 @@ const blogPosts = [
     image: "/placeholder.svg?height=400&width=600",
   },
   {
-    title: "The Evolution of Mobile Payment Solutions",
+    title: "",
     excerpt:
       "From digital wallets to contactless payments, explore how mobile payment technology has evolved over the years.",
     date: "February 15, 2025",
@@ -61,7 +61,7 @@ const blogPosts = [
 
 export default function BlogSection() {
   return (
-    <section className="w-full py-12 md:py-24 bg-white">
+    <section id="blog" className="w-full py-12 md:py-24 bg-white">
       <div className="max-w-[1183px] px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center ">
           <div className="text-center mb-12">
@@ -120,7 +120,7 @@ export default function BlogSection() {
                 <div className="flex items-center gap-2 mb-3">
                   <Badge
                     className={
-                      post.category === "Technology"
+                      post.category === "Info"
                         ? "bg-[#06a5db]/10 text-[#06a5db] hover:bg-[#06a5db]/20 border-none"
                         : "bg-[#43c759]/10 text-[#43c759] hover:bg-[#43c759]/20 border-none"
                     }
@@ -132,15 +132,15 @@ export default function BlogSection() {
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">{post.title}</h3>
-                <p className="text-muted-foreground mb-4 flex-1">
+                <p className="text-gray-700 font-medium text-lg mb-4 flex-1">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center justify-between mt-auto">
                   <span className="text-sm text-muted-foreground flex items-center gap-1">
-                    <Clock className="h-3 w-3" /> {post.readTime} read
+                    <Clock className="h-3 w-3" /> {post.readTime} 
                   </span>
                   <Link
-                    href="#"
+                    href="#blog"
                     className="text-[#06a5db] font-medium flex items-center gap-1 hover:underline"
                   >
                     Lire plus <ArrowRight className="h-4 w-4" />
@@ -150,9 +150,14 @@ export default function BlogSection() {
             </div>
           ))}
         </div>
-        <Link href="/blog" className="">
-          Voir plus
-        </Link>
+        <div className="flex justify-center items-center ">
+          <Link
+            href="/blog"
+            className=" bg-primary-500 hover:bg-primary-600 px-3 py-2 font-medium text-white rounded-lg"
+          >
+            Voir plus
+          </Link>
+        </div>
       </div>
     </section>
   );
