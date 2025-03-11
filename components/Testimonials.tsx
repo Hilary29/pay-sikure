@@ -7,44 +7,35 @@ import { FaQuoteRight } from 'react-icons/fa';
 
 const testimonials = [
   {
-    quote: "Before PaySikure, I struggled to keep track of my crops and find buyers for my produce. Now, I can monitor my farm's health in real time and receive recommendations tailored to my needs. The marketplace feature has been a game-changer, letting me sell directly to buyers and earn better prices without relying on middlemen. PaySikure has truly simplified farming for me.",
+    quote: "Paysikure a complètement transformé la gestion de mes finances. J’envoie et reçois de l’argent en toute sécurité, et les frais sont ultra compétitifs. Une application indispensable !",
     name: "Assamba Melono Medard",
-    role: "Farmer from Cameroon",
   },
   {
-    quote: "PaySikure's real-time data insights have revolutionized how we approach agricultural policy. The ability to analyze trends, monitor farming activities, and ensure sustainability has been invaluable in our efforts to support farmers and improve food security. The platform provides the tools we need to drive impactful change in agriculture.",
+    quote: "Avec Paysikure, je peux enfin gérer mes paiements sans stress. L'interface est fluide et intuitive, et le support client est toujours réactif. J’adore !",
     name: "Ousmanou Oumarou Yaya",
-    role: "Agricultural Researcher",
   },
   {
-    quote: "PaySikure has completely changed how I buy food.I love knowing exactly where my produce comes from, thanks to the product traceability feature. It's reassuring to see the journey from farm to table. Plus, being able to support local farmers directly is a bonus—it feels good to know I'm contributing to sustainable farming practices.",
+    quote: "Avant, je perdais du temps avec les virements et les paiements en espèces. Avec Paysikure, tout est instantané et sécurisé. Je recommande à 100% !",
     name: "Ngono Larissa Gaëlle",
-    role: "Consumer",
   },
   {
-    quote: "PaySikure is a revolution for agricultural policymaking. Real-time data allows us to better understand farmer's needs and implement targeted initiatives to improve food security. It's an essential tool for developing more sustainable and resilient agriculture. ",
+    quote: "J’apprécie particulièrement la transparence de Paysikure. Pas de frais cachés, et les transactions sont rapides et fiables. C’est exactement ce qu’il me fallait ! ",
     name: "Thomas Ndlovu",
-    role: "Agricultural Development Expert",
   },
   {
-    quote: "PaySikure has completely changed how I buy food. I love knowing exactly where my produce comes from, thanks to the product traceability feature. It's reassuring to see the journey from farm to table. Plus, being able to support local farmers directly is a bonus—it feels good to know I'm contributing to sustainable farming practices.",
-    name: "Fatoumata Keita",
-    role: "Farmer",
+    quote: "Gérer mes revenus de freelance n’a jamais été aussi simple ! Grâce à Paysikure, je peux facilement recevoir mes paiements et suivre mes dépenses en un clin d’œil.",
   },
   {
-    quote: "I feel so reassured knowing where my food comes from thanks to PaySikure. I can see exactly where each fruit or vegetable is sourced, and it makes me want to support local farmers directly. This is more than just a platform—it’s a new way to consume responsibly. I love the transparency PaySikure offers. Not only can I see the origin of my food, but I can also communicate directly with the producers. It feels amazing to contribute to sustainable farming practices while enjoying fresh, high-quality produce.",
+    quote: "Avec Paysikure, je peux enfin gérer mes paiements sans stress. L'interface est fluide et intuitive, et le support client est toujours réactif. J’adore !",
     name: "Olivier Mbianda",
-    role: "Consumer",
   },
   {
-    quote: "PaySikure's digital solutions have transformed how we approach agricultural research. We can now track crop performance, analyze trends, and test modern techniques in collaboration with farmers. This connection between innovation and the field is incredible!",
+    quote: " Paysikure a complètement transformé la gestion de mes finances. J’envoie et reçois de l’argent en toute sécurité, et les frais sont ultra compétitifs. Une application indispensable !",
     name: "Pauline Akor",
-    role: "Agronomy Researcher",
   },
   {
-    quote: "With PaySikure, our cooperative finally has a tool to help our members sell their produce at better prices. The real-time recommendations also help optimize agricultural yields, benefiting everyone. This platform is a true driver of transformation for local farmers.",
+    quote: "Avant, je perdais du temps avec les virements et les paiements en espèces. Avec Paysikure, tout est instantané et sécurisé. Je recommande à 100% !",
     name: "Ahmed El-Badry",
-    role: "Agricultural Coordinator",
   }
 ]
 
@@ -71,8 +62,8 @@ export default function Testimonials() {
           <p className="text-secondary-600 font-bold text-lg p-2.5 mb-2.5">
           TEMOIGNAGES
           </p>
-          <p className="font-regular font-inter text-xl text-gray-700 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
-          Histoires réelles de personnes utilisant PaySikure pour transformer leur façon de payer, d&apos;acheter et de transférer de l&apos;argent.
+          <p className="font-medium text-xl text-gray-500 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
+          Des personnes utilisant PaySikure pour transformer leur façon de payer, d&apos;acheter et de transférer de l&apos;argent.
           </p>
         </div> 
         {/* Section des témoignages */}
@@ -99,7 +90,7 @@ export default function Testimonials() {
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
-            className={`p-2 rounded-full bg-primary-50 text-primary-900 hover:bg-primary-100 transition-colors duration-200 ${
+            className={`p-2 rounded-full bg-gray-200 text-gray-900 hover:bg-gray-400 transition-colors duration-200 ${
               currentIndex === 0 && 'opacity-50 cursor-not-allowed'
             }`}
           >
@@ -108,7 +99,7 @@ export default function Testimonials() {
           <button
             onClick={handleNext}
             disabled={currentIndex + testimonialsPerPage >= testimonials.length}
-            className={`p-2 rounded-full bg-primary-50 text-primary-900 hover:bg-primary-100 transition-colors duration-200 ${
+            className={`p-2 rounded-full bg-gray-200 text-gray-900 hover:bg-gray-400 transition-colors duration-200 ${
               currentIndex + testimonialsPerPage >= testimonials.length && 'opacity-50 cursor-not-allowed'
             }`}
           >

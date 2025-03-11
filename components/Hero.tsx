@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full pt-16">
       {/* Hero Background */}
       <div className="relative w-full h-[848px] md:h-[848px] lg:h-[648px] ">
         <div

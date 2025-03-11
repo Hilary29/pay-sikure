@@ -1,22 +1,24 @@
 import Cta from "@/components/Cta";
 import Faq from "@/components/Faq";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import Strength from "@/components/Strength";
+import Service from "@/components/Service";
+import Contact from "@/components/Contact";
+import Blog from "@/components/Blog";
 
 
 export default function Home() {
   return (
     <div>
-      <Header/>
       <Hero/>
-      <Services/>
+      <Strength/>
+      <Service/>
+      <Blog/>
       <Testimonials/>
       <Faq/>
       <Cta/>
-      <Footer/>
+      <Contact/>   
     </div>
   );
 }

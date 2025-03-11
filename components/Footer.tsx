@@ -6,7 +6,7 @@ import { FaX } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white pt-28 py-8 px-6 sm:px-8 w-full">
+    <footer className="bg-white py-8 px-6 sm:px-12 w-full">
       <div className=" mx-auto">
         <div className="flex flex-col  lg:flex-row justify-between mb-8">
           <div className="mb-16 lg:mb-0">
@@ -15,9 +15,9 @@ const Footer: React.FC = () => {
                 <Image
                   src='/images/Paysikure2.png'
                   alt="Agrinet logo"
-                  width={250}
-                  height={150}
-                  className="w-52 h-[64px]"
+                  width={200}
+                  height={100}
+                  className="w-48 h-[82px]"
                 />
               </Link>{" "}
             </div>

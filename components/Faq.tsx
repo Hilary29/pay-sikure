@@ -55,7 +55,7 @@ const Faq = () => {
           <p className="text-secondary-600 font-bold text-lg p-2.5 mb-2.5">
             FAQs
           </p>
-          <p className="font-regular font-inter text-xl text-gray-700 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
+          <p className="font-medium text-xl text-gray-500 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
             Find answers to the most common questions about PaySikure and how it
             works.
           </p>
