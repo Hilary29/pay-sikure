@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <Hero/>
-      <Strength/>
       <Service/>
+      <Strength/>
       <Blog/>
       <Testimonials/>
       <Faq/>

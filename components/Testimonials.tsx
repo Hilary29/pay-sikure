@@ -24,6 +24,7 @@ const testimonials = [
   },
   {
     quote: "Gérer mes revenus de freelance n’a jamais été aussi simple ! Grâce à Paysikure, je peux facilement recevoir mes paiements et suivre mes dépenses en un clin d’œil.",
+    name: "Ines Nimkam",
   },
   {
     quote: "Avec Paysikure, je peux enfin gérer mes paiements sans stress. L'interface est fluide et intuitive, et le support client est toujours réactif. J’adore !",
@@ -67,9 +68,9 @@ export default function Testimonials() {
           </p>
         </div> 
         {/* Section des témoignages */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {testimonials.slice(currentIndex, currentIndex + testimonialsPerPage).map((testimonial, index) => (
-            <div key={index} className="bg-primary-50 rounded-lg p-8 flex flex-col justify-between">
+            <div key={index} className="h-[350px] bg-primary-50 rounded-lg p-8 flex flex-col justify-between">
               <div>
                 <p className="text-gray-600 mb-6">{testimonial.quote}</p>
               </div>

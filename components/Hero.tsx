@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative w-full pt-16">
+    <div className="relative w-full">
       {/* Hero Background */}
       <div className="relative w-full h-[848px] md:h-[848px] lg:h-[648px] ">
         <div
@@ -22,8 +22,8 @@ export default function Hero() {
             {/* Landing Text */}
             <div>
             <div className="flex flex-col gap-10 pb-8">
-              <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight font-poppins">
-              Transformez votre gestion financière avec PaySikure
+              <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight ">
+              Transformez votre gestion Financière avec PaySikure
               </p>
               <p className="text-lg md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
                 Une coalition entre Paysika et Sekure qui vous permet d&apos;accéder à des services financiers transparents, éviter les files d&apos;attente et nous donner le contrôle de vos finances.

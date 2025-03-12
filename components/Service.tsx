@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import {
   Card,
   CardContent,
@@ -10,14 +10,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CheckCircle2, ChevronRightCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Footer from "@/components/Footer";
 import Link from "next/link";
-import Image from "next/image";
+import OtherService from "./OtherService";
 
 type PricingCardProps = {
-  isYearly?: boolean;
   title: string;
   monthlyPrice?: number;
   yearlyPrice?: number;
@@ -27,20 +24,17 @@ type PricingCardProps = {
   variant: "basic" | "pro" | "enterprise";
 };
 
-type func = {
-  handlePay: () => void;
-};
 
 const variantStyles = {
   basic: {
-    container: "border-none bg-gray-100 dark:bg-blue-950",
+    container: "border-none bg-white dark:bg-blue-950",
     title: "text-black dark:text-blue-300",
     description: "text-black-400 dark:text-gray-300",
     features: "text-black-400 dark:text-gray-400",
   },
   pro: {
     container:
-      "border-none bg-gradient-to-br from-primary-100 to-accent-100 dark:bg-purple-900",
+      "border-none bg-gradient-to-br from-primary-100 to-white dark:bg-purple-900",
     title: "text-primary-900 dark:text-purple-300",
     description: "text-primary-900 dark:text-purple-200",
     features: "text-black dark:text-purple-400",
@@ -54,13 +48,11 @@ const variantStyles = {
 };
 
 const PricingCard = ({
-  isYearly,
   title,
   monthlyPrice,
   yearlyPrice,
   description,
   features,
-  actionLabel,
   variant,
 }: PricingCardProps) => (
   <Card
@@ -74,11 +66,6 @@ const PricingCard = ({
         <CardTitle className={cn("text-lg pb-4", variantStyles[variant].title)}>
           {title}
         </CardTitle>
-        {isYearly && yearlyPrice && monthlyPrice && (
-          <div className="px-2.5 rounded-xl h-fit text-sm py-1 bg-zinc-200 text-black dark:bg-zinc-800 dark:text-white-50">
-            Save {monthlyPrice * 12 - yearlyPrice} FCFA
-          </div>
-        )}
       </div>
       <div className="flex items-end gap-0.5 text-base">
         <div className="flex flex-col ">
@@ -119,7 +106,6 @@ const PricingCard = ({
 );
 
 export default function Pricing() {
-  const [isYearly, setIsYearly] = useState(false);
 
   const plans: PricingCardProps[] = [
     {
@@ -186,7 +172,7 @@ export default function Pricing() {
   ];
 
   return (
-    <div className="flex flex-col items-start w-full px-4 sm:px-6 md:px-8 lg:px-32 pt-28 md:pt-32">
+    <div className="flex flex-col items-start w-full bg-gray-100 px-4 sm:px-6 md:px-8 lg:px-32 pt-28 md:pt-16">
       <div className="flex flex-col items-center w-full max-w-[1186px] mx-auto ">
         <div className="text-center mb-12">
           <p className="text-secondary-600 font-bold text-lg p-2.5 mb-2.5">
@@ -201,11 +187,11 @@ export default function Pricing() {
 
         <div className="flex flex-wrap w-full justify-center gap-4">
           {plans.map((plan) => (
-            <PricingCard key={plan.title} {...plan} isYearly={isYearly} />
+            <PricingCard key={plan.title} {...plan} />
           ))}
         </div>
         <p className="pt-8 pb-4 font-medium">
-          Les retraits d'argent de vos cartes sont désormais possibles, mais
+          Les retraits d&apos;argent de vos cartes sont désormais possibles, mais
           nécessitent une validation du Directeur Général de Paysikure sous 72 h
         </p>
         <i className="">
@@ -215,61 +201,7 @@ export default function Pricing() {
         <div className="text-center my-12">
           <p className=" font-bold text-lg ">Autres services</p>
         </div>
-
-        <div className="flex gap-8 mx-8">
-          <div className=" flex flex-col p-4 gap-4 bg-white justify-between shadow-lg rounded-lg ">
-            <p className="text-xl font-semibold">
-              Pourquoi nous prenons plus de 72 heures à vous répondre, et sans
-              réponse automatique{" "}
-            </p>
-            <p>
-              Pourquoi nous prenons plus de 72 heures à vous répondre, et sans
-              réponse automatique{" "}
-            </p>
-            <Link
-              href="/blog"
-              className="flex flex-row gap-2 text-secondary-500 hover:text-secondary-600"
-            >
-              <span>Lire plus</span>
-              <ChevronRightCircle />
-            </Link>
-          </div>
-
-          <div className=" flex flex-col p-4 gap-4 bg-white justify-between shadow-lg rounded-lg ">
-            <p className="text-xl font-semibold">
-              Pourquoi nous prenons plus de 72 heures à vous répondre, et sans
-              réponse automatique{" "}
-            </p>
-            <p>
-              Pourquoi nous prenons plus de 72 heures à vous répondre, et sans
-              réponse automatique{" "}
-            </p>
-            <Link
-              href="/blog"
-              className="flex flex-row gap-2 text-secondary-500 hover:text-secondary-600"
-            >
-              <span>Lire plus</span>
-              <ChevronRightCircle />
-            </Link>
-          </div>
-
-          <div className=" flex flex-col p-4 gap-4 bg-white justify-between shadow-lg rounded-lg ">
-            <p className="text-xl font-semibold">
-              Transfert d'argent en 24 h{" "}
-            </p>
-            <p>
-              Pourquoi nous prenons plus de 72 heures à vous répondre, et sans
-              réponse automatique{" "}
-            </p>
-            <Link
-              href="/blog"
-              className="flex flex-row gap-2 text-secondary-500 hover:text-secondary-600"
-            >
-              <span>Lire plus</span>
-              <ChevronRightCircle />
-            </Link>
-          </div>
-        </div>
+        <OtherService/>
       </div>
     </div>
   );

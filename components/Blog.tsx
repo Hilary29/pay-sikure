@@ -30,33 +30,6 @@ const blogPosts = [
     readTime: "3 min",
     image: "/placeholder.svg?height=400&width=600",
   },
-  {
-    title: "",
-    excerpt:
-      "Practical tips for small business owners looking to streamline their payment systems and reduce costs.",
-    date: "February 25, 2025",
-    category: "Finance",
-    readTime: "5 min",
-    image: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    title: "",
-    excerpt:
-      "A comprehensive guide to open banking and how it's changing the financial landscape for consumers and businesses.",
-    date: "February 20, 2025",
-    category: "Finance",
-    readTime: "8 min",
-    image: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    title: "",
-    excerpt:
-      "From digital wallets to contactless payments, explore how mobile payment technology has evolved over the years.",
-    date: "February 15, 2025",
-    category: "Technology",
-    readTime: "6 min",
-    image: "/placeholder.svg?height=400&width=600",
-  },
 ];
 
 export default function BlogSection() {

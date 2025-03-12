@@ -19,7 +19,7 @@ const StepCard: React.FC<StepCardProps> = ({
       <Image
         src={imageSrc}
         alt={title}
-        width={512}
+        width={412}
         height={112}
         className=" object-cover"
       />
@@ -106,9 +106,9 @@ const Strength: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col items-start max-w-[1183px]  w-full mx-auto">
-        <div className="flex flex-col text-center w-full mb-14 ">
+    <section className="pt-12 ">
+      <div className="flex flex-col items-start max-w-[1186px] sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12 w-full mx-auto">
+        <div className="flex flex-col text-center w-full mb-8 ">
           <p className="text-secondary-600 font-bold text-lg p-2.5 mb-2.5">
             NOTRE FORCE
           </p>

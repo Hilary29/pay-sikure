@@ -39,21 +39,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row  bg-white shadow-lg rounded-lg ">
-            <div className="w-2/5 bg-gray-50 ">
-              <Image src={img} alt="blog-image" className="rounded-md" />
-            </div>
-            <div className="w-3/5 flex flex-col p-4  justify-between">
-              <p>
-                Pourquoi nous prenons plus de 72 heures à vous répondre, et sans
-                réponse automatique{" "}
-              </p>
-              <Link href='/blog' className="flex flex-row gap-2 text-secondary-500 hover:text-secondary-600">
-                <span>Lire plus</span>
-                <ChevronRightCircle />
-              </Link>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
