@@ -49,7 +49,7 @@ export default function ContactSection() {
 
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-primary-50 to-secondary-50 dark:bg-gray-950">
-      <div className="max-w-[1186px] container mx-auto px-16">
+      <div className="max-w-[1186px] container mx-auto  sm:px-16">
         <div className=" mb-16">
           <h2 className="text-xl md:text-2xl font-bold mb-4">Contactez-nous</h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl ">

@@ -25,7 +25,7 @@ const StepCard: React.FC<StepCardProps> = ({
       />
     </div>
     <div className="flex flex-col items-start gap-1 w-2/5 pt-16">
-      <div className="text-primary-900 bg-primary-100 rounded-full px-4 py-2 font-semibold  text-2xl">
+      <div className="text-primary-900 bg-primary-100 rounded-full px-4 py-2 font-bold sm:font-semibold text-xs  sm:text-2xl">
         {title}
       </div>
       <p className=" text-lg py-4 font-medium">{description}</p>
@@ -47,7 +47,7 @@ const StepCard2: React.FC<StepCardProps> = ({
 }) => (
   <div className="flex flex-row  gap-4 w-full  bg-primary-50 bg-opacity-5 justify-end transition-transform duration-300 ease-in-out hover:scale-110">
     <div className="flex flex-col items-start gap-1 w-2/5 pt-16">
-      <div className="text-secondary-900 bg-secondary-100 rounded-full px-4 py-2 font-semibold  text-2xl">
+      <div className="text-secondary-900 bg-secondary-100 rounded-full px-4 py-2 font-bold sm:font-semibold text-xs  sm:text-2xl">
         {title}
       </div>
       <p className=" text-lg py-4 font-medium">{description}</p>
@@ -118,7 +118,7 @@ const Strength: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1  gap-0 w-full  ">
+        <div className="grid grid-cols-1 gap-8  sm:gap-0 w-full  ">
           {steps1.map((step, index) => (
             <StepCard
               key={index}
