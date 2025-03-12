@@ -127,23 +127,23 @@ export default function Header() {
                 </button>
               </div>
               <Link
-                href="#"
+                href="/"
                 className="text-[#606060] hover:text-secondary-500 text-lg font-medium"
               >
                 Accueil
               </Link>
-              <div className="flex items-center gap-2 text-[#606060] hover:text-[#404040] text-lg font-medium">
+              <div className="flex items-center gap-2 text-[#606060] hover:text-secondary-500 text-lg font-medium">
                 <span>Services</span>
                 <ChevronDown size={16} />
               </div>
               <Link
-                href="#"
+                href="/blog"
                 className="text-[#606060] hover:text-secondary-500 text-lg font-medium"
               >
                 Blog
               </Link>
               <Link
-                href="#"
+                href="/a-propos"
                 className="text-[#606060] hover:text-secondary-500 text-lg font-medium"
               >
                 A-propos

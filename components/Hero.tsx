@@ -17,7 +17,7 @@ export default function Hero() {
         />
 
         {/* Hero Content */}
-        <div className="relative container mx-auto px-20 h-[600px] md:h-full flex items-center">
+        <div className="relative container  mx-auto px-8 sm:px-20 h-[600px] md:h-full flex items-center">
           <div className="flex flex-col gap-4  md:w-full max-w-[599px] pt-2 md:pt-0">
             {/* Landing Text */}
             <div>
