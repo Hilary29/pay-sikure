@@ -6,12 +6,14 @@ import Strength from "@/components/Strength";
 import Service from "@/components/Service";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
+import ScrollAnimation from "@/components/ScrollAnimation";
 
 
 export default function Home() {
   return (
     <div>
       <Hero/>
+      <ScrollAnimation/>
       <Service/>
       <Strength/>
       <Blog/>

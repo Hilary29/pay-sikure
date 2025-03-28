@@ -172,7 +172,7 @@ export default function Pricing() {
   ];
 
   return (
-    <div className="flex flex-col items-start w-full bg-gray-100 px-4 sm:px-6 md:px-8 lg:px-32 pt-28 md:pt-16">
+    <div className="flex flex-col items-start w-full bg-gray-200 px-4 sm:px-6 md:px-8 lg:px-32 pt-28 md:pt-16">
       <div className="flex flex-col items-center w-full max-w-[1186px] mx-auto ">
         <div className="text-center mb-12">
           <p className="text-secondary-600 font-bold text-lg p-2.5 mb-2.5">
