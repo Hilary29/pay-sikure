@@ -300,7 +300,7 @@ export default function Comparison() {
                       <div className="flex items-center">
                         <Dot className="h-4 w-4 sm:h-10 sm:w-10 text-green-600 flex-shrink-0" />
                         <span className="text-xl font-semibold ">
-                          Retrait d'argent sur carte
+                          Retrait d&apos;argent sur carte
                         </span>
                       </div>
                     </td>
@@ -426,7 +426,7 @@ export default function Comparison() {
                       <div className="flex items-center">
                         <Dot className="h-4 w-4 sm:h-10 sm:w-10 text-violet-600 flex-shrink-0" />
                         <span className="text-xl font-semibold ">
-                          Retrait d'argent sur carte
+                          Retrait d&apos;argent sur carte
                         </span>
                       </div>
                     </td>
