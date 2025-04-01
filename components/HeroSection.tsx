@@ -209,7 +209,7 @@ const FrameComponent: React.FC = () => {
                    lg:absolute lg:left-[993px] md:top-[454px]
                    lg:flex hidden "
     >
-      <div className="absolute w-full max-w-[360px] h-[213px] left-[4px] top-[18px] bg-gradient-to-r from-[#d2fff7] via-[#92E1D4] to-[#45a297] rounded-lg" />
+      <div className="absolute w-full max-w-[360px] h-[213px] left-[4px] top-[18px] bg-gradient-to-r from-[#c3faf0] via-[#92E1D4] to-[#27b5a4] rounded-lg" />
 
       <div className="absolute flex flex-col md:flex-row gap-4 left-[21px] top-[133px]">
         <button className="flex items-center justify-center w-[95px] h-[34px] bg-white rounded-full font-inter font-medium text-[14px] text-black">
