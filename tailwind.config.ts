@@ -88,6 +88,9 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+		  transitionTimingFunction: {
+			"minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",
+		  },
   		keyframes: {
 			"bg-position": {
 				"0%": { backgroundPosition: "0% 50%" },
@@ -122,8 +125,25 @@ const config: Config = {
 				from: { transform: "translateY(0)" },
 				to: { transform: "translateY(calc(-100% - var(--gap)))" },
 			  },
+			  fadeIn: {
+				from: { opacity: "0" },
+				to: { opacity: "1" },
+			  },
+			  "reveal-up": {
+				"0%": { opacity: "0", transform: "translateY(80%)" },
+				"100%": { opacity: "1", transform: "translateY(0)" },
+			  },
+			  "reveal-down": {
+				"0%": { opacity: "0", transform: "translateY(-80%)" },
+				"100%": { opacity: "1", transform: "translateY(0)" },
+			  },
+				"content-blur": {
+				"0%": { filter: "blur(0.3rem)" },
+				"100%": { filter: "blur(0)" },
+			  },
   		},
   		animation: {
+			fadeIn: "fadeIn 0.5s ease-in",
 			"bg-position": "bg-position 3s infinite alternate",
 			meteor: "meteor var(--duration) var(--delay) ease-in-out infinite",
   			'accordion-down': 'accordion-down 0.2s ease-out',

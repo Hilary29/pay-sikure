@@ -90,10 +90,13 @@ export default function Header() {
           <button className="rounded-lg bg-primary-600 hover:bg-primary-700 px-4 py-2 text-lg font-medium text-white ">
             S&apos;inscrire
           </button>
-          <button className="flex items-center gap-1.5 rounded-lg border border-[#DEDEDE] px-2 py-2 text-lg font-medium text-[#606060]">
-            <Globe size={24} />
-            <span>EN</span>
-          </button>
+          <div>
+          <select className="flex items-center hover:bg-[#00000032] gap-1.5 rounded-lg shadow px-1 py-2 text-lg font-medium">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+          </select>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

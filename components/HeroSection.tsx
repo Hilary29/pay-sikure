@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import type React from "react";
 import { Button } from "./ui/button";
 import { ArrowUpRight } from "lucide-react";
+import HeroCard from "./animata/card/hero-card";
+import CaseStudyCard from "./animata/card/case-study-card";
 
 const HeroSection: React.FC = () => {
   return (
@@ -84,19 +88,34 @@ const HeroSection: React.FC = () => {
                 Une Transparence totale pour Retransformer les services
                 bancaires au Cameroun
               </p>
-              <div className="w-full pt-8 rounded-lg">
-                <Image
+              <div className="hidden md:flex w-full pt-8 rounded-lg">
+                <CaseStudyCard
+                  category=""
+                  image="/images/hero.jpg"
+                  link="https://neero.io/fr/customer"
+                  logo=""
+                  title=""
+                  type="content"
+                />
+{/*                 <Image
                   src="/images/hero.jpg"
                   alt="Hero Image"
                   width={256}
                   height={256}
                   className="mx-auto sm:w-full h-auto sm:h-[364px] rounded-lg"
+                /> */}
+              </div>
+              <div className="flex md:hidden w-full pt-8 rounded-lg">
+                <CaseStudyCard
+                  category=""
+                  image="/images/hero.jpg"
+                  link="https://neero.io/fr/customer"
+                  logo=""
+                  title="How Delivery Hero streamlines marketing reports across all their brands with Clarisights"
                 />
               </div>
 
-              <div
-                className="flex md:hidden flex-col gap-4 mt-8  max-w-full px-4 sm:px-0 "
-              >
+              <div className="flex md:hidden flex-col gap-4 mt-8  max-w-full px-4 sm:px-0 ">
                 <Button className="flex items-center justify-center  mx-auto bg-primary-500 hover:bg-primary-600 text-white p-2 sm:py-6 sm:px-6 rounded-md">
                   <span className="font-medium text-sm sm:text-xl">
                     Telechargez maintenant
@@ -190,10 +209,8 @@ const FrameComponent: React.FC = () => {
                    lg:absolute lg:left-[993px] md:top-[454px]
                    lg:flex hidden "
     >
-      {/* Rectangle 32 */}
-      <div className="absolute w-full max-w-[360px] h-[213px] left-[4px] top-[18px] bg-[#92E1D4] rounded-lg" />
+      <div className="absolute w-full max-w-[360px] h-[213px] left-[4px] top-[18px] bg-gradient-to-r from-[#d2fff7] via-[#92E1D4] to-[#45a297] rounded-lg" />
 
-      {/* Buttons */}
       <div className="absolute flex flex-col md:flex-row gap-4 left-[21px] top-[133px]">
         <button className="flex items-center justify-center w-[95px] h-[34px] bg-white rounded-full font-inter font-medium text-[14px] text-black">
           IMPACT
@@ -202,11 +219,10 @@ const FrameComponent: React.FC = () => {
           BENEFICES
         </button>
       </div>
-
-      {/* Text */}
       <p className="absolute w-[286px] left-[21px] top-[196px] font-inter font-semibold text-[14px] text-black">
         DÉCOUVREZ NOS SOLUTIONS BANCAIRES
       </p>
+      
     </div>
   );
 };
