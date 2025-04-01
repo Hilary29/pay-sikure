@@ -19,7 +19,7 @@ export default function MovingGradient({
     <div {...props} className={cn("relative overflow-hidden bg-white", className)}>
       <div
         className={cn(
-          "bg-size bg-gradient-to-r from-[#74f8e2] from-30% via-secondary-500 via-50% to-white to-80% opacity-15",
+          "bg-size bg-gradient-to-r from-white from-30% via-[#b1fff2] via-50% to-white to-80% opacity-0",
           {
             [backgroundClassName]: true,
             "animate-bg-position bg-[length:300%_auto]": animated,

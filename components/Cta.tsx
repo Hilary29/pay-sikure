@@ -6,7 +6,7 @@ import phone2 from "@/public/images/phone.png";
 
 const Cta = () => {
   return (
-    <section className="flex justify-center items-center bg-primary-50">
+    <section className="flex justify-center items-center bg-violet-50">
       <div className="flex flex-row items-center justify-between bg-white gap-8 w-full px-6 md:px-10  my-32 p-2 sm:p-0 rounded-lg mx-auto shadow-xl max-w-screen-lg">
         <div className="flex flex-col items-start gap-4 max-w-lg text-left">
           <p className="text-white-50 font-satoshi font-bold text-2xl">

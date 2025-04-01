@@ -17,21 +17,17 @@ import HorizontalMarquee from "@/components/HorizontalMarquee";
 export default function Home() {
   return (
     <div>
-      <HeroSection/> 
-      {/* <Hero/>  */}
+{/*       <HeroSection/>  */}
+      <Hero/> 
       <MovingGradient>
       <ScrollAnimation/>
       </MovingGradient>
       <Comparison/>
       <CardGroup />
       <HorizontalMarquee/>
-      <Service/>
-      <Strength/>
-      <Blog/>
-      <Testimonials/>
       <Faq/>
       <Cta/>
-      <Contact/>    
+{/*       <Contact/> */}    
     </div>
   );
 }

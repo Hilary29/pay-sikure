@@ -51,15 +51,15 @@ const Faq = () => {
       className="w-full py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-white-50"
     >
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-10 sm:mb-16">
-          <p className="text-secondary-600 font-bold text-lg p-2.5 mb-2.5">
-            FAQs
-          </p>
-          <p className="font-medium text-xl text-gray-500 justify-center px-2.5 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
-            Find answers to the most common questions about PaySikure and how it
-            works.
-          </p>
-        </div>
+      <div className="text-center mb-6 sm:mb-16">
+        <p className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4 bg-gradient-to-r from-violet-600 via-blue-600 to-green-500 bg-clip-text text-transparent">
+          FAQs
+        </p>
+        <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          Découvrez les différences entre Paysikure et Neero pour choisir
+          l&apos;application fintech qui correspond le mieux à vos besoins.
+        </p>
+      </div>
 
         <Accordion type="single" collapsible className="w-full text-black-50 ">
           {faqItems.map((item, index) => (

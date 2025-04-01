@@ -65,16 +65,16 @@ const HeroSection: React.FC = () => {
 
             {/* First floating button */}
             <div
-              className="z-50 relative w-full max-w-[263px] h-[44px] bg-[#ffffffab] border mx-auto 
+              className="z-50 relative w-full max-w-[243px] h-[44px] bg-[#ffffffab] border mx-auto 
                            mt-[550px] sm:mt-0
                            md:absolute md:left-[380px] md:top-[500px] 
                            sm:left-[calc(50%-130px)] sm:top-[500px]
                            bg-white/66 shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-full
                            sm:flex hidden"
             >
-              <div className="absolute w-full max-w-[221px] h-[44px] top-0 flex flex-row justify-center items-center px-4 gap-[10px] rounded-full">
+              <div className="absolute w-full max-w-[201px] h-[44px] top-0 flex flex-row justify-center items-center px-4 gap-[10px] rounded-full">
                 <span className="pl-8 font-inter font-medium text-[14px] leading-[24px] text-black tracking-[-0.01em]">
-                  Transparence et inclusion
+                Services sans filtre
                 </span>
                 <div className="border absolute w-[40px] h-[40px] left-0 top-[2px] bg-white rounded-full flex items-center justify-center">
                   <ArrowUpRight />
@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
             {/* Group 2 - Container for Text */}
             <div className="absolute w-full max-w-[372px] h-auto top-[113px] left-1/2 transform -translate-x-1/2 text-center md:text-justify">
               <p className="font-bold text-lg sm:text-2xl md:text-[32px] leading-[24px] sm:leading-[32px] md:leading-[44px] text-[#1E1E1E] px-4 md:px-0">
-                Une Transparence totale pour Retransformer les services
+                Une Transparence totale pour transformer les services
                 bancaires au Cameroun
               </p>
               <div className="hidden md:flex w-full pt-8 rounded-lg">
