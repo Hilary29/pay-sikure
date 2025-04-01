@@ -219,7 +219,7 @@ const FrameComponent: React.FC = () => {
           BENEFICES
         </button>
       </div>
-      <p className="absolute w-[286px] left-[21px] top-[196px] font-inter font-semibold text-[14px] text-black">
+      <p className="absolute w-[286px] left-[21px] top-[196px] font-inter font-bold text-[14px] text-green-950">
         DÉCOUVREZ NOS SOLUTIONS BANCAIRES
       </p>
       
