@@ -24,7 +24,6 @@ type PricingCardProps = {
   variant: "basic" | "pro" | "enterprise";
 };
 
-
 const variantStyles = {
   basic: {
     container: "border-none bg-white dark:bg-blue-950",
@@ -106,7 +105,6 @@ const PricingCard = ({
 );
 
 export default function Pricing() {
-
   const plans: PricingCardProps[] = [
     {
       title: "Carte Maniaka",
@@ -185,14 +183,16 @@ export default function Pricing() {
           <p className=" font-bold text-lg ">Cartes Virtuelles</p>
         </div>
 
+
         <div className="flex flex-wrap w-full justify-center gap-4">
           {plans.map((plan) => (
             <PricingCard key={plan.title} {...plan} />
           ))}
         </div>
         <p className="pt-8 pb-4 font-medium">
-          Les retraits d&apos;argent de vos cartes sont désormais possibles, mais
-          nécessitent une validation du Directeur Général de Paysikure sous 72 h
+          Les retraits d&apos;argent de vos cartes sont désormais possibles,
+          mais nécessitent une validation du Directeur Général de Paysikure sous
+          72 h
         </p>
         <i className="">
           Notre manière de sécuriser votre argent sur nos comptes.
@@ -201,7 +201,7 @@ export default function Pricing() {
         <div className="text-center my-12">
           <p className=" font-bold text-lg ">Autres services</p>
         </div>
-        <OtherService/>
+        <OtherService />
       </div>
     </div>
   );

@@ -89,6 +89,15 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		keyframes: {
+			"bg-position": {
+				"0%": { backgroundPosition: "0% 50%" },
+				"100%": { backgroundPosition: "100% 50%" },
+			  },
+	  
+			meteor: {
+				"0%": { transform: "translateY(-20%) translateX(-50%)" },
+				"100%": { transform: "translateY(300%) translateX(-50%)" },
+			  },
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -104,11 +113,23 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			"marquee-x": {
+				from: { transform: "translateX(0)" },
+				to: { transform: "translateX(calc(-100% - var(--gap)))" },
+			  },
+			"marquee-y": {
+				from: { transform: "translateY(0)" },
+				to: { transform: "translateY(calc(-100% - var(--gap)))" },
+			  },
   		},
   		animation: {
+			"bg-position": "bg-position 3s infinite alternate",
+			meteor: "meteor var(--duration) var(--delay) ease-in-out infinite",
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			"marquee-horizontal": "marquee-x var(--duration) infinite linear",
+			"marquee-vertical": "marquee-y var(--duration) linear infinite",
   		}
   	}
   },
