@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Globe, Menu, X } from "lucide-react";
+import { ScannerDialog } from "./ScannerDialog";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,15 +88,13 @@ export default function Header() {
 
         {/* Desktop Action Buttons */}
         <div className="hidden lg:flex md:items-center md:gap-3">
-          <button className="rounded-lg bg-primary-600 hover:bg-primary-700 px-4 py-2 text-lg font-medium text-white ">
-            S&apos;inscrire
-          </button>
+          <ScannerDialog buttonClassName="rounded-lg bg-primary-500 hover:bg-primary-600 p-2 sm:py-6 sm:px-3 text-lg font-medium text-white"  buttonText = "S'inscrire" />
           <div>
-          <select className="flex items-center hover:bg-[#00000032] gap-1.5 rounded-lg shadow px-1 py-2 text-lg font-medium">
-            <option value="fr">FR</option>
-            <option value="en">EN</option>
-            <option value="es">ES</option>
-          </select>
+            <select className="flex items-center hover:bg-[#00000032] gap-1.5 rounded-lg shadow px-1 py-2.5 text-lg font-medium">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+            </select>
           </div>
         </div>
 
@@ -165,13 +164,9 @@ export default function Header() {
               </Link>
 
               <div className="flex flex-col gap-3 pt-2 mx-auto">
-                <button className="rounded-lg px-4 py-3 text-lg font-medium text-[#606060] hover:bg-gray-100">
-                  Sign Up
-                </button>
-                <button className="rounded-lg bg-primary-600 hover:bg-primary-700 px-4 py-2 text-lg font-medium text-white ">
-                  S&apos;inscrire
-                </button>
-                <button className="flex items-center justify-center gap-1.5 rounded-lg border border-[#DEDEDE] px-3 py-3 text-lg font-medium text-[#606060]">
+              <ScannerDialog buttonClassName="rounded-lg bg-primary-500 hover:bg-primary-600 p-3 text-lg font-medium text-white"  buttonText = "S'inscrire" />
+
+                <button className="flex items-center justify-center gap-1.5 rounded-lg border border-[#DEDEDE] p-1.5 text-lg font-medium text-[#606060]">
                   <Globe size={24} />
                   <span>EN</span>
                 </button>

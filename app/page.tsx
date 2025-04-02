@@ -1,3 +1,4 @@
+"use client";
 import Cta from "@/components/Cta";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
@@ -12,6 +13,7 @@ import Comparison from "@/components/Comparison";
 import CardGroup from "@/components/CardGroup";
 import HeroSection from "@/components/HeroSection";
 import HorizontalMarquee from "@/components/HorizontalMarquee";
+import { ScannerDialog } from "@/components/ScannerDialog";
 
 
 export default function Home() {

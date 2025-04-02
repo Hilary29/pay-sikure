@@ -12,19 +12,20 @@ interface CardData {
 // Hardcoded card data
 const cards: CardData[] = [
   {
-    image: "/images/neero.png",
-    title: "",
-    subtitle: "Neero",
-    description:
-      "Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.",
-  },
-  {
     image: "/images/logo.png",
     title: "",
     subtitle: "Paysikure",
     description:
       "Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.",
   },
+  {
+    image: "/images/neero.png",
+    title: "",
+    subtitle: "Neero",
+    description:
+      "Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.",
+  },
+
 
 ];
 

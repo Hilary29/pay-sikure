@@ -24,9 +24,6 @@ interface ComparisonCriterion {
 
 export default function Comparison() {
   const [activeTab, setActiveTab] = useState("all");
-  const [selectedCriterion, setSelectedCriterion] = useState<string | null>(
-    null
-  );
 
   const criteria: ComparisonCriterion[] = [
     {
@@ -190,13 +187,9 @@ export default function Comparison() {
       ? criteria
       : criteria.filter((criterion) => criterion.category === activeTab);
 
-  const handleRowClick = (id: string) => {
-    setSelectedCriterion(selectedCriterion === id ? null : id);
-  };
-
   return (
     <section className="py-8 sm:py-0 px-4 max-w-[1186px] mx-auto">
-            <div className="text-center mb-6 sm:mb-16">
+      <div className="text-center mb-6 sm:mb-16">
         <p className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4 bg-gradient-to-r from-violet-600 via-blue-600 to-green-500 bg-clip-text text-transparent">
           PAYSIKURE VS NEERO
         </p>
@@ -464,15 +457,15 @@ export default function Comparison() {
         />
       </div>
 
-      <div className="border-0 shadow-lg my-8 sm:my-16 overflow-hidden max-w-[950px] mx-auto">
-        <div className="p-4 sm:p-2">
+      <div className="border-0 shadow-lg my-8 sm:my-16 overflow-hidden">
+        <div className="p-4 sm:p-6">
           <Tabs
             defaultValue="all"
             value={activeTab}
             onValueChange={setActiveTab}
             className="w-full "
           >
-            <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mb-0 sm:mb-8 gap-0 overflow-x-auto">
+            <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mb-0 sm:mb-8 gap-2 overflow-x-auto">
               {categories.map((category) => (
                 <TabsTrigger
                   key={category.id}
@@ -484,12 +477,14 @@ export default function Comparison() {
               ))}
             </TabsList>
 
-            <TabsContent value={activeTab} className="mt-0 ">
+            <TabsContent value={activeTab} className="mt-0">
               <div className="overflow-x-auto -mx-6 px-6">
-                <table className="w-full border-collapse  min-w-[100px]">
+                <table className="w-full border-collapse min-w-[100px]">
                   <thead>
                     <tr className="border-b">
-                      <th className="text-left text-lg py-4 px-2 sm:px-4 font-medium text-gray-500"></th>
+                      <th className="text-left text-lg py-4 px-2 sm:px-4 font-medium text-gray-500">
+                        
+                      </th>
                       <th className="text-center py-4 px-2 sm:px-4 w-1/4">
                         <div className="flex flex-col items-center">
                           <div className="h-8 w-8 sm:h-12 sm:w-12 rounded-full flex items-center justify-center mb-2">
@@ -525,60 +520,46 @@ export default function Comparison() {
                   </thead>
                   <tbody>
                     {filteredCriteria.map((criterion, index) => (
-                      <>
-                        <tr
-                          key={criterion.id}
-                          className={`border-b cursor-pointer ${
-                            index % 2 === 0 ? "bg-gray-50" : "bg-white"
-                          }`}
-                          onClick={() => handleRowClick(criterion.id)}
-                        >
-                          <td className="py-3 sm:py-4 px-2 sm:px-4 font-medium text-xs sm:text-lg">
-                            {criterion.name}
-                          </td>
-                          <td className="text-center py-3 sm:py-4 px-2 sm:px-4">
-                            {criterion.paysikure ? (
-                              <div className="flex justify-center">
-                                <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-green-100 flex items-center justify-center">
-                                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
-                                </div>
+                      <tr
+                        key={criterion.id}
+                        className={`border-b ${
+                          index % 2 === 0 ? "bg-gray-50" : "bg-white"
+                        }`}
+                      >
+                        <td className="py-3 sm:py-4 px-2 sm:px-4 font-medium text-xs sm:text-lg">
+                          {criterion.name}
+                        </td>
+                        <td className="text-center py-3 sm:py-4 px-2 sm:px-4">
+                          {criterion.paysikure ? (
+                            <div className="flex justify-center">
+                              <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-green-100 flex items-center justify-center">
+                                <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
                               </div>
-                            ) : (
-                              <div className="flex justify-center">
-                                <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-red-100 flex items-center justify-center">
-                                  <X className="h-4 w-4 sm:h-5 sm:w-5 text-red-600" />
-                                </div>
+                            </div>
+                          ) : (
+                            <div className="flex justify-center">
+                              <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-red-100 flex items-center justify-center">
+                                <X className="h-4 w-4 sm:h-5 sm:w-5 text-red-600" />
                               </div>
-                            )}
-                          </td>
-                          <td className="text-center py-3 sm:py-4 px-2 sm:px-4">
-                            {criterion.neero ? (
-                              <div className="flex justify-center">
-                                <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-green-100 flex items-center justify-center">
-                                  <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
-                                </div>
-                              </div>
-                            ) : (
-                              <div className="flex justify-center">
-                                <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-red-100 flex items-center justify-center">
-                                  <X className="h-4 w-4 sm:h-5 sm:w-5 text-red-600" />
-                                </div>
-                              </div>
-                            )}
-                          </td>
-                        </tr>
-                        {selectedCriterion === criterion.id &&
-                          criterion.description && (
-                            <tr className="bg-gray-200">
-                              <td
-                                colSpan={3}
-                                className="py-2 px-10 sm:px-10 font-light sm:font-normal text-sm sm:text-base text-black sm:text-gray-900  text-justify sm:text-start "
-                              >
-                                {criterion.description}
-                              </td>
-                            </tr>
+                            </div>
                           )}
-                      </>
+                        </td>
+                        <td className="text-center py-3 sm:py-4 px-2 sm:px-4">
+                          {criterion.neero ? (
+                            <div className="flex justify-center">
+                              <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-green-100 flex items-center justify-center">
+                                <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
+                              </div>
+                            </div>
+                          ) : (
+                            <div className="flex justify-center">
+                              <div className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-red-100 flex items-center justify-center">
+                                <X className="h-4 w-4 sm:h-5 sm:w-5 text-red-600" />
+                              </div>
+                            </div>
+                          )}
+                        </td>
+                      </tr>
                     ))}
                   </tbody>
                 </table>

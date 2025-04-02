@@ -3,28 +3,26 @@ import Link from "next/link";
 import React from "react";
 import phone from "@/public/images/phone2.png";
 import phone2 from "@/public/images/phone.png";
+import { ScannerDialog } from "./ScannerDialog";
 
 const Cta = () => {
   return (
-    <section className="flex justify-center items-center bg-violet-50">
-      <div className="flex flex-row items-center justify-between bg-white gap-8 w-full px-6 md:px-10  my-32 p-2 sm:p-0 rounded-lg mx-auto shadow-xl max-w-screen-lg">
+    <section className="flex justify-center items-center bg-secondary-50">
+      <div className="flex flex-row items-center justify-between bg-white gap-8 w-full px-6 md:px-10 my-14 sm:my-20 p-2 sm:p-0 rounded-lg mx-auto shadow-xl max-w-screen-lg">
         <div className="flex flex-col items-start gap-4 max-w-lg text-left">
-          <p className="text-white-50 font-satoshi font-bold text-2xl">
+          <p className=" font-bold text-2xl">
             Pret a transformer votre compte bancaire?
           </p>
 
-          <p className="text-white-50 text-sm sm:text-md">
+          <p className="text-gray-700 text-sm sm:text-md">
             Creez un compte instantanement avec PaySikure et commencez a
             effectuer des operations.
           </p>
-          <Link
-            href="/signup"
-            className="p-2 sm:px-6 sm:py-3  bg-primary-600 text-white
-          font-inter font-medium text-sm sm:text-md rounded-md 
-          hover:bg-primary-700 "
-          >
-            <p className=" text-sm sm:text-lg">Telecharger l&apos;application</p>
-          </Link>
+          <ScannerDialog
+            buttonClassName="rounded-lg bg-primary-500 text-base sm:text-lg hover:bg-primary-600 p-2 sm:py-6 sm:px-6 font-medium text-white"
+            buttonText="Télécharger l'application"
+          />
+
           <div className=" hidden sm:flex-row gap-4">
             <div className="flex items-center justify-center gap-2.5  text-black rounded-xl">
               <span className="w-4 h-4 sm:w-8 sm:h-8">

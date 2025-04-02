@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { ScannerDialog } from "./ScannerDialog";
 
 export default function Hero() {
   return (
@@ -22,26 +23,22 @@ export default function Hero() {
             {/* Landing Text */}
             <div>
             <div className="flex flex-col gap-10 pb-8">
-              <p className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight ">
-              Transformez votre gestion Financière avec PaySikure
+              <p className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight   ">
+              Une Transparence totale pour Retransformer les services bancaires au Cameroun.
               </p>
               <p className="text-md md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
-                Une coalition entre Paysika et Sekure qui vous permet d&apos;accéder à des services financiers transparents, éviter les files d&apos;attente et nous donner le contrôle de vos finances.
+              Paysikure redéfinit les services financiers en plaçant la transparence et l&apos;inclusion au cœur de sa mission. Nous brisons les barrières pour offrir à tous un accès simple, équitable et innovant à la gestion de leur argent.
               </p>
             </div>
             </div>
 
             <div className="">
-              <Button className="flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white p-2 sm:py-6 sm:px-6 rounded-md">
-                <span className=" font-medium text-sm sm:text-xl">
-                  Telechargez maintenant
-                </span>
-              </Button>
+            <ScannerDialog buttonClassName="flex items-center text-base sm:text-lg font-medium justify-center bg-primary-500 hover:bg-primary-600 text-white p-2 sm:py-6 sm:px-6 rounded-md" buttonText="Télécharger Maintenant" />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center sm:justify-center gap-2.5  text-white rounded-xl">
-                <span className="w-4 h-4 sm:w-8 sm:h-8">
+                <span className="w-5 h-5 sm:w-8 sm:h-8">
                   <Image
                     src="/images/apple.png"
                     alt={"applestore"}
@@ -55,7 +52,7 @@ export default function Hero() {
               </div>
               <div className="hidden md:flex w-1 h-8  border-2"></div>
               <div className="flex items-center sm:justify-center gap-2.5   text-white rounded-xl">
-                <span className="w-4 h-4 sm:w-8 sm:h-8">
+                <span className="w-5 h-5 sm:w-8 sm:h-8">
                   <Image
                     src="/images/playstore.png"
                     alt={"playstore"}
