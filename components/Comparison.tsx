@@ -177,7 +177,7 @@ export default function Comparison() {
   ];
 
   const categories = [
-    { id: "all", name: "Toutes" },
+    { id: "all", name: "Tous" },
     { id: "recharges", name: "Recharges" },
     { id: "virements", name: "Virements" },
     { id: "partage", name: "Partage d'argent" },
@@ -196,7 +196,7 @@ export default function Comparison() {
 
   return (
     <section className="py-8 sm:py-0 px-4 max-w-[1186px] mx-auto">
-            <div className="text-center mb-6 sm:mb-16">
+      <div className="text-center mb-6 sm:mb-16">
         <p className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4 bg-gradient-to-r from-violet-600 via-blue-600 to-green-500 bg-clip-text text-transparent">
           PAYSIKURE VS NEERO
         </p>
@@ -205,6 +205,10 @@ export default function Comparison() {
           l&apos;application fintech qui correspond le mieux à vos besoins.
         </p>
       </div>
+
+      <p className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4 text-center ">
+        CARTES ET NOS FRAIS
+      </p>
       <div className="mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
         <div>
           <div className="h-[186px] w-full flex items-center justify-center mb-4 sm:mb-8 ">
@@ -457,15 +461,41 @@ export default function Comparison() {
           </div>
         </div>
       </div>
-      <div className="mt-8 sm:mt-16 text-center ">
+      <div className="mt-8 sm:mt-16 text-center pb-10 sm:pb-2 ">
         <ScannerDialog
           buttonClassName="rounded-lg bg-violet-600 hover:bg-violet-700 p-3 sm:py-6 sm:px-6 text-base sm:text-xl font-medium text-white"
           buttonText="Rejoins la Meilleure Application"
         />
       </div>
 
-      <div className="border-0 shadow-lg my-8 sm:my-16 overflow-hidden max-w-[950px] mx-auto">
-        <div className="p-4 sm:p-2">
+      <div className=" my-8 sm:my-16  max-w-[950px] mx-auto">
+      <div className="py-8 sm:py-16 flex flex-row justify-between mx-2 sm:mx-16 ">
+            <div className="flex flex-col items-center">
+              <div className="h-32 w-32 sm:h-[264px] sm:w-[264px] rounded-full flex items-center justify-center mb-2">
+                <Image
+                  src="/images/phonePaysikure.jpg"
+                  alt="logo"
+                  width={184}
+                  height={184}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="h-32 w-32 sm:h-[264px] sm:w-[264px] rounded-full flex items-center justify-center mb-2">
+                <Image
+                  src="/images/phoneNeero.jpg"
+                  alt="logo"
+                  width={184}
+                  height={184}
+                />
+              </div>
+            </div>
+          </div>
+
+        <p className="text-lg sm:text-xl font-semibold mb-2 sm:mb-8  mt-16 text-center ">
+          SERVICES
+        </p>
+        <div className="p-4 sm:p-2 border-0 shadow-lg overflow-hidden">
           <Tabs
             defaultValue="all"
             value={activeTab}

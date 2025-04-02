@@ -9,8 +9,9 @@ const HorizontalMarquee = () => {
           TEMOIGNAGES
         </p>
         <p className="text-gray-600  text-sm sm:text-lg">
-          Découvrez les différences entre Paysikure et Neero pour choisir
-          l&apos;application fintech qui correspond le mieux à vos besoins.
+          Un Service Client Qui Se Bat Pour Vous ,malgré les difficultés. Chez
+          Paysikure, notre équipe s&apos;engage à être ultra-réactive même si on
+          n&apos;y arrive pas toujours.
         </p>
       </div>
 
