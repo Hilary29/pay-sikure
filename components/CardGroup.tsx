@@ -12,18 +12,18 @@ interface CardData {
 // Hardcoded card data
 const cards: CardData[] = [
   {
-    image: "/images/logo.png",
+    image: "/images/Icon-Paysikure.png",
     title: "",
     subtitle: "Paysikure",
     description:
-      "Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.",
+      "Nous nous positionnons comme une \"simple\" application visant à simplifier les transactions financières.",
   },
   {
     image: "/images/neero.png",
     title: "",
     subtitle: "Neero",
     description:
-      "Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.",
+      "Neero se positionne comme une \"super-app\" financière tout-en-un, visant à simplifier la vie des utilisateurs avec une large gamme de services. L’accent est mis sur l’innovation et la commodité pour un public global et technophile.",
   },
 
 

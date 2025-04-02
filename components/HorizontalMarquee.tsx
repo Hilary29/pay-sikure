@@ -153,8 +153,8 @@ const HorizontalMarquee = () => {
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Franchement, chapeau à l&apos;équipe de Neero on ressent la
-                  différence depuis 4 mois. J’ai contacté le service client et
-                  on m’a répondu hyper vite sur mon virement pour le Nigeria
+                  différence depuis 4 mois. J&apos;ai contacté le service client et
+                  on m&apos;a répondu hyper vite sur mon virement pour le Nigeria
                   avec une solution claire et rapide. J&apos;avais déjà peur. Ça
                   fait plaisir un service aussi efficace.
                 </p>

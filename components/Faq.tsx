@@ -7,6 +7,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ScannerDialog } from "./ScannerDialog";
+import { ChevronLeftCircle, ChevronRightCircle } from "lucide-react";
 /* import { MinusCircle, PlusCircle } from 'lucide-react' */
 
 const ToggleIcon = ({ isOpen }: { isOpen: boolean }) => {
@@ -81,6 +83,13 @@ const Faq = () => {
             </AccordionItem>
           ))}
         </Accordion>
+      </div>
+      <div className="flex items-center justify-center pt-8  ">
+        <ScannerDialog
+          buttonClassName="text-lg sm:text-2xl font-bold text-primary-600 hover:text-primary-700 border-primary-600 hover:border-primary-700 border-none bg-transparent hover:bg-transparent shadow-none"
+          buttonText="En savoir plus"
+        />
+        <ChevronRightCircle className="text-primary-600 w-8 h-8" />
       </div>
     </section>
   );

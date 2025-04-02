@@ -207,9 +207,9 @@ export default function Comparison() {
       </div>
 
       <p className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4 text-center ">
-        CARTES ET NOS FRAIS
+        CARTES ET FRAIS
       </p>
-      <div className="mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+      <div className="mt-6 sm:mt-10 pb-16 sm:pb-0 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
         <div>
           <div className="h-[186px] w-full flex items-center justify-center mb-4 sm:mb-8 ">
             <Image
@@ -326,13 +326,14 @@ export default function Comparison() {
                   </tr>
                 </tbody>
               </table>
+              <div className="flex items-center justify-center py-4 sm:py-8 ">
+                <ScannerDialog
+                  buttonClassName="text-lg sm:text-2xl py-3 px-4 sm:py-6 sm:px-3 font-bold text-primary-600 hover:text-primary-700 border-primary-600 hover:border-primary-700 border-2 bg-transparent hover:bg-transparent shadow-none"
+                  buttonText="Obtiens ta carte en 30 Minutes"
+                />
+              </div>
             </CardContent>
           </Card>
-          <div className="flex items-center justify-center pt-4 sm:pt-8 pb-4 sm:pb-0">
-            <span className="text-lg sm:text-2xl font-bold text-primary-600">
-              Obtiens ta carte en 30 Minutes
-            </span>
-          </div>
         </div>
 
         <div>
@@ -452,45 +453,40 @@ export default function Comparison() {
                   </tr>
                 </tbody>
               </table>
+              <div className="flex items-center justify-center py-4 sm:py-8 ">
+                <ScannerDialog
+                  buttonClassName="text-lg sm:text-2xl py-3 px-4 sm:py-6 sm:px-3 font-bold text-violet-700 hover:text-violet-800 border-violet-700 hover:border-violet-800 border-2 bg-transparent hover:bg-transparent shadow-none"
+                  buttonText="Obtiens ta carte en 2 Minutes"
+                />
+              </div>
             </CardContent>
           </Card>
-          <div className="flex items-center justify-center pt-4 sm:pt-8 pb-4 sm:pb-0 ">
-            <span className="text-lg sm:text-2xl font-bold text-violet-700 ">
-              Obtiens ta carte en 2 Minutes
-            </span>
-          </div>
         </div>
-      </div>
-      <div className="mt-8 sm:mt-16 text-center pb-10 sm:pb-2 ">
-        <ScannerDialog
-          buttonClassName="rounded-lg bg-violet-600 hover:bg-violet-700 p-3 sm:py-6 sm:px-6 text-base sm:text-xl font-medium text-white"
-          buttonText="Rejoins la Meilleure Application"
-        />
       </div>
 
       <div className=" my-8 sm:my-16  max-w-[950px] mx-auto">
-      <div className="py-8 sm:py-16 flex flex-row justify-between mx-2 sm:mx-16 ">
-            <div className="flex flex-col items-center">
-              <div className="h-32 w-32 sm:h-[264px] sm:w-[264px] rounded-full flex items-center justify-center mb-2">
-                <Image
-                  src="/images/phonePaysikure.jpg"
-                  alt="logo"
-                  width={184}
-                  height={184}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-32 w-32 sm:h-[264px] sm:w-[264px] rounded-full flex items-center justify-center mb-2">
-                <Image
-                  src="/images/phoneNeero.jpg"
-                  alt="logo"
-                  width={184}
-                  height={184}
-                />
-              </div>
+        <div className="py-8 sm:py-16 flex flex-row justify-between mx-2 sm:mx-16 ">
+          <div className="flex flex-col items-center">
+            <div className="h-32 w-32 sm:h-[264px] sm:w-[264px] rounded-full flex items-center justify-center mb-2">
+              <Image
+                src="/images/phonePaysikure.jpg"
+                alt="logo"
+                width={184}
+                height={184}
+              />
             </div>
           </div>
+          <div className="flex flex-col items-center">
+            <div className="h-32 w-32 sm:h-[264px] sm:w-[264px] rounded-full flex items-center justify-center mb-2">
+              <Image
+                src="/images/phoneNeero.jpg"
+                alt="logo"
+                width={184}
+                height={184}
+              />
+            </div>
+          </div>
+        </div>
 
         <p className="text-lg sm:text-xl font-semibold mb-2 sm:mb-8  mt-16 text-center ">
           SERVICES

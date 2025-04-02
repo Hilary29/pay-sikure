@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Image from "next/image";
 
-export function ScannerDialog({ buttonClassName = "bg-primary-500 hover:bg-primary-600 text-white hover:text-white text-base sm:text-lg font-medium py-6 px-4", buttonText = "Télécharger l'application" }) {
+export function ScannerDialog({ buttonClassName = " ", buttonText = "Télécharger l'application" }) {
   const [open, setOpen] = React.useState(false);
 
   return (
