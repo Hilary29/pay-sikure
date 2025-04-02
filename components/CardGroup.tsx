@@ -9,7 +9,7 @@ interface CardData {
   description: string;
 }
 
-// Hardcoded card data
+
 const cards: CardData[] = [
   {
     image: "/images/Icon-Paysikure.png",

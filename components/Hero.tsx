@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { ScannerDialog } from "./ScannerDialog";
 
 export default function Hero() {
@@ -24,10 +23,10 @@ export default function Hero() {
             <div>
             <div className="flex flex-col gap-10 pb-8">
               <p className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight   ">
-              Une Transparence totale pour Retransformer les services bancaires au Cameroun.
+              Une Transparence totale pour retransformer les services bancaires au Cameroun.
               </p>
               <p className="text-md md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
-              Paysikure redéfinit les services financiers en plaçant la transparence et l&apos;inclusion au cœur de sa mission. Nous brisons les barrières pour offrir à tous un accès simple, équitable et innovant à la gestion de leur argent.
+              Paysikure redéfinit les services financiers en plaçant la transparence et l&apos;inclusion au cœur de sa mission.
               </p>
             </div>
             </div>
