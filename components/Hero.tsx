@@ -22,7 +22,7 @@ export default function Hero() {
             {/* Landing Text */}
             <div>
             <div className="flex flex-col gap-10 pb-8">
-              <p className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight   ">
+              <p className="text-2xl  lg:text-4xl font-semibold text-white leading-relaxed   ">
               Une Transparence totale pour retransformer les services bancaires au Cameroun.
               </p>
               <p className="text-md md:text-xl lg:text-2xl text-white font-normal leading-relaxed font-inter tracking-tight">
